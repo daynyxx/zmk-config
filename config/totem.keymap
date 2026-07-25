@@ -56,7 +56,29 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        rctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <6 7 8>;
+        };
+
+        lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <1 2 3>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12 13>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -64,20 +86,20 @@
         Base {
             display-name = "Base";
             bindings = <
-            &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt NUMBER_5 T    &mt NUMBER_6 Y  &mt N7 U         &mt NUMBER_8 I  &mt NUMBER_9 O  &mt NUMBER_0 P
-            &hml 1 A        &hml 2 S        &hm LCTRL D     &hm LSHIFT F    &kp G             &kp H           &hm RSHFT J      &hm RCTRL K     &hm RALT L      &hm RGUI SEMICOLON
-&kp LSHIFT  &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M            &kp COMMA       &kp DOT         &kp SLASH           &kp RSHIFT
-                                            &kp LEFT_GUI    &lt 1 SPACE     &kp ESCAPE        &kp RET         &lt 2 BACKSPACE  &kp RIGHT_ALT
+            &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 F  &mt NUMBER_4 P  &mt NUMBER_5 B    &mt NUMBER_6 J  &mt N7 L       &mt NUMBER_8 U  &mt NUMBER_9 Y  &mt NUMBER_0 SEMICOLON
+            &kp A           &kp R           &kp S           &kp T           &kp G             &kp M           &kp N          &kp E           &kp I           &kp O
+&kp LSHIFT  &kp Z           &kp X           &kp C           &kp D           &kp V             &kp K           &kp H          &kp COMMA       &kp DOT         &kp SLASH               &kp RSHIFT
+                                            &kp LEFT_GUI    &lt 1 SPACE     &to 1             &to 2           &kp BACKSPACE  &kp RIGHT_ALT
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans
-        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
-                        &trans  &trans  &trans    &trans    &trans    &kp DOT
+        &kp GRAVE  &trans  &trans  &trans  &trans        &trans    &trans    &trans   &trans     &trans
+        &trans     &trans  &trans  &trans  &trans        &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp RIGHT
+&trans  &trans     &trans  &trans  &trans  &trans        &trans    &trans    &trans   &trans     &trans     &trans
+                           &trans  &trans  &kp ESCAPE    &trans    &trans    &kp DOT
             >;
         };
 
