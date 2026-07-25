@@ -96,10 +96,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-        &kp GRAVE  &trans  &trans  &trans  &trans        &trans    &trans    &trans   &trans     &trans
-        &trans     &trans  &trans  &trans  &trans        &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp RIGHT
-&trans  &trans     &trans  &trans  &trans  &trans        &trans    &trans    &trans   &trans     &trans     &trans
-                           &trans  &trans  &kp ESCAPE    &trans    &trans    &kp DOT
+        &kp GRAVE  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans
+        &trans     &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp RIGHT
+&trans  &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
+                           &trans  &trans  &trans    &trans    &trans    &kp DOT
             >;
         };
 
@@ -109,7 +109,7 @@
         &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp BACKSLASH  &kp KP_ASTERISK  &kp SQT  &kp DQT
         &trans    &trans  &trans    &trans      &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp MINUS      &trans           &trans   &trans
 &trans  &trans    &trans  &trans    &trans      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
-                          &trans    &trans      &trans                  &trans                 &trans         &trans
+                          &trans    &trans      &kp ESCAPE              &trans                 &trans         &trans
             >;
         };
 
