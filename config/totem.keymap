@@ -89,7 +89,7 @@
             &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 F  &mt NUMBER_4 P  &mt NUMBER_5 B    &mt NUMBER_6 J  &mt N7 L       &mt NUMBER_8 U  &mt NUMBER_9 Y  &mt NUMBER_0 SEMICOLON
             &kp A           &kp R           &kp S           &kp T           &kp G             &kp M           &kp N          &kp E           &kp I           &kp O
 &kp LSHIFT  &kp Z           &kp X           &kp C           &kp D           &kp V             &kp K           &kp H          &kp COMMA       &kp DOT         &kp SLASH               &kp RSHIFT
-                                            &kp LEFT_GUI    &lt 1 SPACE     &mo 1             &mo 2           &kp BACKSPACE  &kp RIGHT_ALT
+                                            &kp LEFT_GUI    &kp SPACE       &mo 1             &mo 2           &kp BACKSPACE  &kp RIGHT_ALT
             >;
         };
 
